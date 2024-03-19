@@ -9,19 +9,19 @@
 {
     @Html.HiddenFor(model => model.Id)
 
-    <div>
+    <div class="mb-3">
         Name: @Html.TextBoxFor(model => model.Name)
     </div>
-    <div>
+    <div class="mb-3">
         Address: @Html.TextBoxFor(model => model.Address)
     </div>
-    <div>
+    <div class="mb-3">
         Salary: @Html.TextBoxFor(model => model.Salary)
     </div>
-    <div>
+    <div class="mb-3">
         Department: @Html.TextBoxFor(model => model.Department)
     </div>
-    <div>
+    <div class="mb-3">
         <input type="submit" value="Update Employee" />
     </div>
 }

@@ -1,0 +1,31 @@
+﻿@model List<EmployeeManagement.Models.Audit>
+
+<h2>Audit Trail Report</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Audit ID</th>
+            <th>Employee ID</th>
+            <th>Old Name</th>
+            <th>New Name</th>
+            <th>Change Type</th>
+            <th>Change Date</th>
+            <th>Changed By</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var record in Model)
+        {
+            <tr>
+                <td>@record.AuditID</td>
+                <td>@record.EmployeeID</td>
+                <td>@record.OldName</td>
+                <td>@record.NewName</td>
+                <td>@record.ChangeType</td>
+                <td>@record.ChangeDate</td>
+                <td>@record.ChangedBy</td>
+            </tr>
+        }
+    </tbody>
+</table>
