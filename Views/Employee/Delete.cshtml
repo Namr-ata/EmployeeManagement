@@ -1,0 +1,13 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Employee
+<h2>Confirm Delete</h2>
+<p>Are you sure you want to delete employee @Model.Name?</p>
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.Id)
+    <input type="submit" value="Delete" />
+}
